@@ -3,6 +3,7 @@ import './App.css'
 import Hello from './components/Hello'
 import Header from './components/Header'
 import Conditional from './components/Conditional'
+import Tailwind from './components/Tailwind'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,8 @@ function App() {
         </p> */}
         {/* <Hello/> */}
       {/* </div> */}
-      <Conditional/>
+      {/* <Conditional/> */}
+      <Tailwind/>
     </div>
   )
 }
