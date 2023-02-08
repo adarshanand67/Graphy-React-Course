@@ -1,16 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import Hello from './components/Hello'
-import Header from './components/Header'
-import Conditional from './components/Conditional'
-import Tailwind from './components/Tailwind'
+import { Icon } from "@iconify/react";
+import { useState } from "react";
+import "./App.css";
+import Card from "./components/Card";
+import Conditional from "./components/Conditional";
+import CountDown from "./components/CountDown";
+import DaisyUI from "./components/DaisyUI";
+import Header from "./components/Header";
+import Hello from "./components/Hello";
+import Navbar from "./components/Navbar";
+import Tailwind from "./components/Tailwind";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-     {/* <Header/> */}
+      <Navbar />
+      {/* <Header/> */}
       {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -18,12 +24,38 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p> */}
-        {/* <Hello/> */}
+      {/* <Hello/> */}
       {/* </div> */}
       {/* <Conditional/> */}
-      <Tailwind/>
+      {/* <Tailwind/> */}
+      <div className="flex justify-center">
+        <Icon icon="mdi:cards-heart" fontSize={150} color="red" />
+        <CountDown />
+      </div>
+      <div className="flex">
+        <Card
+          title="Card 1"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+          imgUrl={"https://source.unsplash.com/random/900x700/?valentine"}
+        />
+        <Card
+          title="Card 2"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+          imgUrl={"https://source.unsplash.com/random/900x700/?valentine"}
+        />
+        <Card
+          title="Card 3"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+          imgUrl={"https://source.unsplash.com/random/900x700/?valentine"}
+        />
+        <Card
+          title="Card 4"
+          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+          imgUrl={"https://source.unsplash.com/random/900x700/?valentine"}
+        />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
