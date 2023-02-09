@@ -4,6 +4,7 @@ import "./App.css";
 import Card from "./components/Card";
 import Conditional from "./components/Conditional";
 import CountDown from "./components/CountDown";
+import Counter from "./components/Counter";
 import DaisyUI from "./components/DaisyUI";
 import Header from "./components/Header";
 import Hello from "./components/Hello";
@@ -29,11 +30,11 @@ function App() {
       {/* <Conditional/> */}
       {/* <Tailwind/> */}
       <div className="flex justify-center">
-        <Icon icon="mdi:cards-heart" fontSize={150} color="red" />
-        <CountDown />
+        {/* <Icon icon="mdi:cards-heart" fontSize={150} color="red" /> */}
+        {/* <CountDown /> */}
       </div>
       <div className="flex">
-        <Card
+        {/* <Card
           title="Card 1"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
           imgUrl={"https://source.unsplash.com/random/900x700/?valentine"}
@@ -52,8 +53,9 @@ function App() {
           title="Card 4"
           description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
           imgUrl={"https://source.unsplash.com/random/900x700/?valentine"}
-        />
+        /> */}
       </div>
+      <Counter />
     </div>
   );
 }
