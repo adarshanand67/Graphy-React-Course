@@ -6,6 +6,7 @@ import Conditional from "./components/Conditional";
 import CountDown from "./components/CountDown";
 import Counter from "./components/Counter";
 import DaisyUI from "./components/DaisyUI";
+import Handlers from "./components/Handlers";
 import Header from "./components/Header";
 import Hello from "./components/Hello";
 import Navbar from "./components/Navbar";
@@ -55,7 +56,8 @@ function App() {
           imgUrl={"https://source.unsplash.com/random/900x700/?valentine"}
         /> */}
       </div>
-      <Counter />
+      {/* <Counter /> */}
+      <Handlers/>
     </div>
   );
 }
