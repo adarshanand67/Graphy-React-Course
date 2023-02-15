@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
+  content: ["node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}"],
+  plugins: [require("daisyui"), require("flowbite/plugin")],
   daisyui: {
     themes: ["valentine"],
   },

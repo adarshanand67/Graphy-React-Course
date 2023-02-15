@@ -6,6 +6,7 @@ import Conditional from "./components/Conditional";
 import CountDown from "./components/CountDown";
 import Counter from "./components/Counter";
 import DaisyUI from "./components/DaisyUI";
+import Form from "./components/Form";
 import Handlers from "./components/Handlers";
 import Header from "./components/Header";
 import Hello from "./components/Hello";
@@ -57,7 +58,9 @@ function App() {
         /> */}
       </div>
       {/* <Counter /> */}
-      <Handlers/>
+      {/* <Handlers/> */}
+      {/* <Conditional/> */}
+      <Form />
     </div>
   );
 }
